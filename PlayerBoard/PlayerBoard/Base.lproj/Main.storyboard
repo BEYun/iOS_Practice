@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1LL-iM-b6e">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayerBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lionel Messi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygh-O0-QOW">
+                                <rect key="frame" x="121.5" y="515" width="171" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="lionel_messi" translatesAutoresizingMaskIntoConstraints="NO" id="dZS-jH-Pij">
+                                <rect key="frame" x="60" y="188" width="294" height="247"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ygh-O0-QOW" firstAttribute="centerX" secondItem="dZS-jH-Pij" secondAttribute="centerX" id="2Vd-AZ-ltE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ygh-O0-QOW" secondAttribute="bottom" constant="308.5" id="3qH-qG-ajM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dZS-jH-Pij" secondAttribute="trailing" constant="60" id="70s-ei-vLl"/>
+                            <constraint firstItem="Ygh-O0-QOW" firstAttribute="top" secondItem="dZS-jH-Pij" secondAttribute="bottom" constant="80" id="EOK-y7-buY"/>
+                            <constraint firstItem="dZS-jH-Pij" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="N29-hq-45C"/>
+                            <constraint firstItem="dZS-jH-Pij" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="OsL-vW-Jhi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tYz-N4-NJY">
+                        <barButtonItem key="rightBarButtonItem" title="설정" id="aoL-U5-nSb">
+                            <connections>
+                                <segue destination="HTl-XX-PLU" kind="show" id="ZZJ-Ss-oCT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="dZS-jH-Pij" id="DwW-O0-8r6"/>
+                        <outlet property="nameLabel" destination="Ygh-O0-QOW" id="aCL-qG-ojI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292.75362318840581" y="69.642857142857139"/>
+        </scene>
+        <!--설정-->
+        <scene sceneID="Vc8-3h-q8q">
+            <objects>
+                <viewController id="HTl-XX-PLU" customClass="SettingViewController" customModule="PlayerBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RPQ-C7-Ofo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcg-k4-Ifh">
+                                <rect key="frame" x="15" y="148" width="384" height="444.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="선수 선택" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGs-0n-7jq">
+                                        <rect key="frame" x="0.0" y="0.0" width="92.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="V9o-b3-jrO">
+                                        <rect key="frame" x="0.0" y="47" width="384" height="180.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0m-5V-UeI">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="180.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="lionel_messi"/>
+                                                <connections>
+                                                    <action selector="tapPlayerButton:" destination="HTl-XX-PLU" eventType="touchUpInside" id="ACK-7K-kuJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.34999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRK-a2-py3">
+                                                <rect key="frame" x="193" y="0.0" width="191" height="180.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="steven_gerrard"/>
+                                                <connections>
+                                                    <action selector="tapPlayerButton:" destination="HTl-XX-PLU" eventType="touchUpInside" id="1kp-X6-bUv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="VrZ-cn-Jrg">
+                                        <rect key="frame" x="0.0" y="244.5" width="384" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" alpha="0.34999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arf-YQ-Ea7">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="200"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="virgil_van_dijk"/>
+                                                <connections>
+                                                    <action selector="tapPlayerButton:" destination="HTl-XX-PLU" eventType="touchUpInside" id="291-Jj-Yj4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.34999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glt-QC-yeY">
+                                                <rect key="frame" x="193" y="0.0" width="191" height="200"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="son_heung_min"/>
+                                                <connections>
+                                                    <action selector="tapPlayerButton:" destination="HTl-XX-PLU" eventType="touchUpInside" id="Vwc-cF-lgz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="V9o-b3-jrO" firstAttribute="leading" secondItem="vcg-k4-Ifh" secondAttribute="leading" id="AV7-no-MVf"/>
+                                    <constraint firstItem="VrZ-cn-Jrg" firstAttribute="leading" secondItem="vcg-k4-Ifh" secondAttribute="leading" id="OTZ-dJ-sBh"/>
+                                    <constraint firstAttribute="trailing" secondItem="V9o-b3-jrO" secondAttribute="trailing" id="Vqk-Jy-nbP"/>
+                                    <constraint firstAttribute="trailing" secondItem="VrZ-cn-Jrg" secondAttribute="trailing" id="zhb-Ve-Q2D"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEe-c3-Ust">
+                                <rect key="frame" x="183" y="642.5" width="48.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="저장"/>
+                                <connections>
+                                    <action selector="tapSaveButton:" destination="HTl-XX-PLU" eventType="touchUpInside" id="qYV-Na-boZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zqQ-J5-mhI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bEe-c3-Ust" firstAttribute="centerX" secondItem="vcg-k4-Ifh" secondAttribute="centerX" id="6ul-yi-vQT"/>
+                            <constraint firstItem="bEe-c3-Ust" firstAttribute="top" secondItem="vcg-k4-Ifh" secondAttribute="bottom" constant="50" id="OVf-zI-ZgR"/>
+                            <constraint firstItem="vcg-k4-Ifh" firstAttribute="top" secondItem="zqQ-J5-mhI" secondAttribute="top" constant="60" id="Y7B-0c-1lG"/>
+                            <constraint firstItem="vcg-k4-Ifh" firstAttribute="leading" secondItem="zqQ-J5-mhI" secondAttribute="leading" constant="15" id="iJd-vk-Snp"/>
+                            <constraint firstItem="zqQ-J5-mhI" firstAttribute="trailing" secondItem="vcg-k4-Ifh" secondAttribute="trailing" constant="15" id="tgk-Vj-WwA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="설정" id="3kn-yD-CSF"/>
+                    <connections>
+                        <outlet property="gerrardButton" destination="eRK-a2-py3" id="mFC-r7-WCe"/>
+                        <outlet property="messiButton" destination="n0m-5V-UeI" id="1Z1-5k-mIl"/>
+                        <outlet property="sonButton" destination="glt-QC-yeY" id="P6u-gU-C7f"/>
+                        <outlet property="vandijkButton" destination="arf-YQ-Ea7" id="bXZ-jm-K4L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jgJ-Wj-Ur5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169.5652173913045" y="69.642857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="smz-Oq-XQO">
+            <objects>
+                <navigationController id="1LL-iM-b6e" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lfz-Pg-t2i">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="n8V-kf-Ueq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8wq-9o-jpM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-623" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lionel_messi" width="166.5" height="166.5"/>
+        <image name="son_heung_min" width="166.5" height="186"/>
+        <image name="steven_gerrard" width="166.5" height="166.5"/>
+        <image name="virgil_van_dijk" width="166.5" height="166.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
