@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController, PlayerSettingDelegate {
     
+    var player_list: [Player] = [messi, gerrard, vandijk, son]
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     

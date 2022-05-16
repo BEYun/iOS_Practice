@@ -16,8 +16,7 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var sonButton: UIButton!
     @IBOutlet weak var vandijkButton: UIButton!
     @IBOutlet weak var gerrardButton: UIButton!
-    
-    var playerButton: UIButton?
+
     var playerName: String?
     var playerImage: UIImage?
     
@@ -29,12 +28,27 @@ class SettingViewController: UIViewController {
     }
     
     func configureView() {
-
+        if let playerName = playerName, let playerImage = playerImage {
+            self.playerName = playerName
+            self.playerImage = playerImage
+        }
+        changeAlpha(player: playerName)
     }
     
     @IBAction func tapPlayerButton(_ sender: UIButton) {
-        self.changeAlpha(player: sender)
-        self.selectedPlayer(player: sender)
+        if sender == self.messiButton {
+            changeAlpha(player: messi.name)
+            changeSelectedPlayer(player: messi.name)
+        } else if sender == self.gerrardButton {
+            changeAlpha(player: gerrard.name)
+            changeSelectedPlayer(player: gerrard.name)
+        } else if sender == self.vandijkButton {
+            changeAlpha(player: vandijk.name)
+            changeSelectedPlayer(player: vandijk.name)
+        } else {
+            changeAlpha(player: son.name)
+            changeSelectedPlayer(player: son.name)
+        }
     }
     
     @IBAction func tapSaveButton(_ sender: UIButton) {
@@ -45,26 +59,26 @@ class SettingViewController: UIViewController {
     }
     
     // 선택된 선수와 그렇지 않은 선수 간의 alpha 값을 조절하는 함수
-    private func changeAlpha(player: UIButton) {
-        self.messiButton.alpha = player == self.messiButton ? 1 : 0.2
-        self.gerrardButton.alpha = player == self.gerrardButton ? 1 : 0.2
-        self.vandijkButton.alpha = player == self.vandijkButton ? 1 : 0.2
-        self.sonButton.alpha = player == self.sonButton ? 1 : 0.2
+    private func changeAlpha(player: String?) {
+        self.messiButton.alpha = player == messi.name ? 1 : 0.2
+        self.gerrardButton.alpha = player == gerrard.name ? 1 : 0.2
+        self.vandijkButton.alpha = player == vandijk.name ? 1 : 0.2
+        self.sonButton.alpha = player == son.name ? 1 : 0.2
     }
     
-    private func selectedPlayer(player: UIButton) {
-        if player == self.messiButton {
-            self.playerName = "Lionel Messi"
-            self.playerImage = UIImage(named: "lionel_messi")
-        } else if player == self.gerrardButton {
-            self.playerName = "Steven Gerrard"
-            self.playerImage = UIImage(named: "steven_gerrard")
-        } else if player == self.vandijkButton {
-            self.playerName = "Virgil van Dijk"
-            self.playerImage = UIImage(named: "virgil_van_dijk")
+    private func changeSelectedPlayer(player: String?) {
+        if player == messi.name {
+            self.playerName = messi.name
+            self.playerImage = messi.player_img
+        } else if player == gerrard.name {
+            self.playerName = gerrard.name
+            self.playerImage = gerrard.player_img
+        } else if player == vandijk.name {
+            self.playerName = vandijk.name
+            self.playerImage = vandijk.player_img
         } else {
-            self.playerName = "Son Heung Min"
-            self.playerImage = UIImage(named: "son_heung_min")
+            self.playerName = son.name
+            self.playerImage = son.player_img
         }
     }
 }

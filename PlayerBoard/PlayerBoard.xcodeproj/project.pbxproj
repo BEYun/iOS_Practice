@@ -14,6 +14,7 @@
 		AE804939282CE3C800AA4BFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE804938282CE3C800AA4BFF /* Assets.xcassets */; };
 		AE80493C282CE3C800AA4BFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE80493A282CE3C800AA4BFF /* LaunchScreen.storyboard */; };
 		AE804944282CF4EA00AA4BFF /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE804943282CF4EA00AA4BFF /* SettingViewController.swift */; };
+		AEADFB042832334700C501AF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEADFB032832334700C501AF /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AE80493B282CE3C800AA4BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE80493D282CE3C800AA4BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE804943282CF4EA00AA4BFF /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		AEADFB032832334700C501AF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				AE80493A282CE3C800AA4BFF /* LaunchScreen.storyboard */,
 				AE80493D282CE3C800AA4BFF /* Info.plist */,
 				AE804943282CF4EA00AA4BFF /* SettingViewController.swift */,
+				AEADFB032832334700C501AF /* Player.swift */,
 			);
 			path = PlayerBoard;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE804934282CE3C600AA4BFF /* ViewController.swift in Sources */,
+				AEADFB042832334700C501AF /* Player.swift in Sources */,
 				AE804930282CE3C600AA4BFF /* AppDelegate.swift in Sources */,
 				AE804932282CE3C600AA4BFF /* SceneDelegate.swift in Sources */,
 				AE804944282CF4EA00AA4BFF /* SettingViewController.swift in Sources */,

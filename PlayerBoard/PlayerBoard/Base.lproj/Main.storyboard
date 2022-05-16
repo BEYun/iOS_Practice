@@ -80,7 +80,7 @@
                                                     <action selector="tapPlayerButton:" destination="HTl-XX-PLU" eventType="touchUpInside" id="ACK-7K-kuJ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" alpha="0.34999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRK-a2-py3">
+                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRK-a2-py3">
                                                 <rect key="frame" x="193" y="0.0" width="191" height="180.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="steven_gerrard"/>
@@ -93,7 +93,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="VrZ-cn-Jrg">
                                         <rect key="frame" x="0.0" y="244.5" width="384" height="200"/>
                                         <subviews>
-                                            <button opaque="NO" alpha="0.34999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arf-YQ-Ea7">
+                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arf-YQ-Ea7">
                                                 <rect key="frame" x="0.0" y="0.0" width="191" height="200"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="virgil_van_dijk"/>
@@ -101,7 +101,7 @@
                                                     <action selector="tapPlayerButton:" destination="HTl-XX-PLU" eventType="touchUpInside" id="291-Jj-Yj4"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" alpha="0.34999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glt-QC-yeY">
+                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glt-QC-yeY">
                                                 <rect key="frame" x="193" y="0.0" width="191" height="200"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="son_heung_min"/>
