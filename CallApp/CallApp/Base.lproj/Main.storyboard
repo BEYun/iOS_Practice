@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,189 +13,307 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CallApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHP-1Z-4b6">
-                                <rect key="frame" x="24" y="252" width="360" height="586"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VCl-F0-kAA">
+                                <rect key="frame" x="30" y="114" width="330" height="74.666666666666686"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6rC-P0-FxI">
-                                        <rect key="frame" x="30" y="30" width="300" height="515.33333333333337"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="번호" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dz3-69-FJQ">
+                                        <rect key="frame" x="140.66666666666666" y="0.0" width="48.666666666666657" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCk-4g-KSh">
+                                        <rect key="frame" x="127" y="43.666666666666657" width="76.333333333333314" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="번호 추가"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="IHP-1Z-4b6">
+                                <rect key="frame" x="30" y="348" width="330" height="438"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="6rC-P0-FxI">
+                                        <rect key="frame" x="30" y="30" width="270" height="378"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KRg-0I-6DO">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="96.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="70"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uz5-Ic-id2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="96.666666666666671" height="96.666666666666671"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uz5-Ic-id2" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="uz5-Ic-id2" secondAttribute="height" id="G7X-gV-jgj"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="1" titleAlignment="center"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="1" subtitle=" " titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etn-3w-02x">
-                                                        <rect key="frame" x="101.66666666666666" y="0.0" width="96.666666666666657" height="96.666666666666671"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etn-3w-02x" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
+                                                        <rect key="frame" x="100" y="0.0" width="70" height="70"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="etn-3w-02x" secondAttribute="height" id="pdr-Qk-18i"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <string key="title">2
-A B C</string>
+                                                        <buttonConfiguration key="configuration" style="plain" title="2" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                            <attributedString key="attributedSubtitle">
+                                                                <fragment content="A B C">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="12" name="Helvetica"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVH-Ot-fYx">
-                                                        <rect key="frame" x="203.33333333333331" y="0.0" width="96.666666666666686" height="96.666666666666671"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVH-Ot-fYx" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
+                                                        <rect key="frame" x="200" y="0.0" width="70" height="70"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="vVH-Ot-fYx" secondAttribute="height" id="oEo-0t-Fj6"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <string key="title">3
-D E F</string>
+                                                        <buttonConfiguration key="configuration" style="plain" title="3" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                            <attributedString key="attributedSubtitle">
+                                                                <fragment content="D E F"/>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ccr-CF-tDY">
-                                                <rect key="frame" x="0.0" y="104.66666666666669" width="300" height="96.666666666666686"/>
+                                                <rect key="frame" x="0.0" y="77" width="270" height="70"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRF-hf-y4L">
-                                                        <rect key="frame" x="0.0" y="0.0" width="96.666666666666671" height="96.666666666666671"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRF-hf-y4L" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="jRF-hf-y4L" secondAttribute="height" id="By9-12-bSK"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <string key="title">4
-G H I</string>
+                                                        <buttonConfiguration key="configuration" style="plain" title="4" subtitle="G H I" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT5-NA-XKL">
-                                                        <rect key="frame" x="101.66666666666666" y="0.0" width="96.666666666666657" height="96.666666666666671"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT5-NA-XKL" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
+                                                        <rect key="frame" x="100" y="0.0" width="70" height="70"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="bT5-NA-XKL" secondAttribute="height" id="tqZ-w4-F8c"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <string key="title">5
-J K L</string>
+                                                        <buttonConfiguration key="configuration" style="plain" title="5" subtitle="J K L" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckz-KY-f50">
-                                                        <rect key="frame" x="203.33333333333331" y="0.0" width="96.666666666666686" height="96.666666666666671"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckz-KY-f50" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
+                                                        <rect key="frame" x="200" y="0.0" width="70" height="70"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Ckz-KY-f50" secondAttribute="height" id="aof-33-eAe"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <string key="title">6
-M N O</string>
+                                                        <buttonConfiguration key="configuration" style="plain" title="6" subtitle="M N O" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ghw-23-7AX">
-                                                <rect key="frame" x="0.0" y="209.33333333333329" width="300" height="96.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="154" width="270" height="70"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoE-x3-RW0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="96.666666666666671" height="96.666666666666671"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoE-x3-RW0" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="WoE-x3-RW0" secondAttribute="height" id="kUU-2a-hcY"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <string key="title">7
-P Q R S</string>
+                                                        <buttonConfiguration key="configuration" style="plain" title="7" subtitle="P Q R S" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpz-v9-SnI">
-                                                        <rect key="frame" x="101.66666666666666" y="0.0" width="96.666666666666657" height="96.666666666666671"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpz-v9-SnI" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
+                                                        <rect key="frame" x="100" y="0.0" width="70" height="70"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="mpz-v9-SnI" secondAttribute="height" id="fQ9-M0-pZd"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <string key="title">8
-T U V</string>
+                                                        <buttonConfiguration key="configuration" style="plain" title="8" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                            <attributedString key="attributedSubtitle">
+                                                                <fragment content="T U V">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="12" name="Helvetica"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bd-9X-QWg">
-                                                        <rect key="frame" x="203.33333333333331" y="0.0" width="96.666666666666686" height="96.666666666666671"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bd-9X-QWg" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
+                                                        <rect key="frame" x="200" y="0.0" width="70" height="70"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="4bd-9X-QWg" secondAttribute="height" id="4sU-mV-Wln"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <string key="title">9
-W X Y Z</string>
+                                                        <buttonConfiguration key="configuration" style="plain" title="9" subtitle="W X Y Z" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="s0Y-7Z-QDe">
-                                                <rect key="frame" x="0.0" y="314" width="300" height="96.666666666666686"/>
+                                                <rect key="frame" x="0.0" y="231" width="270" height="70"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obe-xA-v2X">
-                                                        <rect key="frame" x="0.0" y="0.0" width="96.666666666666671" height="96.666666666666671"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obe-xA-v2X" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="obe-xA-v2X" secondAttribute="height" id="zGb-k6-WtT"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="*"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="asterisk" catalog="system">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfY-fV-YEg">
-                                                        <rect key="frame" x="101.66666666666666" y="0.0" width="96.666666666666657" height="96.666666666666671"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfY-fV-YEg" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
+                                                        <rect key="frame" x="100" y="0.0" width="70" height="70"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="sfY-fV-YEg" secondAttribute="height" id="pYp-UB-9bx"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <string key="title">0
-+</string>
+                                                        <buttonConfiguration key="configuration" style="plain" title="0" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                            <attributedString key="attributedSubtitle">
+                                                                <fragment content="+">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="12" name="Helvetica"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05k-Ge-8Ed">
-                                                        <rect key="frame" x="203.33333333333331" y="0.0" width="96.666666666666686" height="96.666666666666671"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05k-Ge-8Ed" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
+                                                        <rect key="frame" x="200" y="0.0" width="70" height="70"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="05k-Ge-8Ed" secondAttribute="height" id="XSn-Zb-Ors"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="#"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="#" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kA3-5D-8qD">
-                                                <rect key="frame" x="101.66666666666664" y="418.66666666666663" width="198.33333333333337" height="96.666666666666629"/>
+                                                <rect key="frame" x="100" y="308" width="170" height="70"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBz-KZ-qL8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="96.666666666666671" height="96.666666666666671"/>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBz-KZ-qL8" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="pBz-KZ-qL8" secondAttribute="height" id="U2J-b0-qB7"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Call"/>
+                                                        <buttonConfiguration key="configuration" style="plain">
+                                                            <imageReference key="image" image="phone.circle.fill" catalog="system" symbolScale="default"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                                            <color key="baseForegroundColor" systemColor="systemGreenColor"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfy-1n-eau">
-                                                        <rect key="frame" x="101.66666666666666" y="0.0" width="96.666666666666657" height="96.666666666666671"/>
+                                                        <rect key="frame" x="100" y="0.0" width="70" height="70"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Lfy-1n-eau" secondAttribute="height" id="yiH-AX-4XJ"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="delete.left" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="KRg-0I-6DO" firstAttribute="leading" secondItem="6rC-P0-FxI" secondAttribute="leading" id="3TM-ub-OeG"/>
                                             <constraint firstItem="kA3-5D-8qD" firstAttribute="height" secondItem="KRg-0I-6DO" secondAttribute="height" id="3iv-ae-43G"/>
+                                            <constraint firstAttribute="trailing" secondItem="ghw-23-7AX" secondAttribute="trailing" id="64X-Lp-6YW"/>
+                                            <constraint firstItem="kA3-5D-8qD" firstAttribute="leading" secondItem="sfY-fV-YEg" secondAttribute="leading" id="7bL-uu-3Fy"/>
+                                            <constraint firstItem="ghw-23-7AX" firstAttribute="leading" secondItem="6rC-P0-FxI" secondAttribute="leading" id="Lk0-kx-s6S"/>
                                             <constraint firstItem="s0Y-7Z-QDe" firstAttribute="height" secondItem="KRg-0I-6DO" secondAttribute="height" id="UWT-HE-z5R"/>
                                             <constraint firstItem="ghw-23-7AX" firstAttribute="height" secondItem="KRg-0I-6DO" secondAttribute="height" id="UZY-cE-3EF"/>
+                                            <constraint firstItem="Ccr-CF-tDY" firstAttribute="leading" secondItem="6rC-P0-FxI" secondAttribute="leading" id="V9b-p3-n44"/>
+                                            <constraint firstAttribute="trailing" secondItem="s0Y-7Z-QDe" secondAttribute="trailing" id="Y9M-1x-V6C"/>
+                                            <constraint firstItem="s0Y-7Z-QDe" firstAttribute="leading" secondItem="6rC-P0-FxI" secondAttribute="leading" id="dVW-Xr-vbN"/>
                                             <constraint firstItem="Ccr-CF-tDY" firstAttribute="height" secondItem="KRg-0I-6DO" secondAttribute="height" id="fNN-iW-1sj"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ccr-CF-tDY" secondAttribute="trailing" id="umI-Ds-lEl"/>
+                                            <constraint firstAttribute="trailing" secondItem="KRg-0I-6DO" secondAttribute="trailing" id="w7O-KN-XfL"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="6rC-P0-FxI" secondAttribute="trailing" constant="30" id="ETB-t0-8ph"/>
                                     <constraint firstAttribute="bottom" secondItem="6rC-P0-FxI" secondAttribute="bottom" priority="750" constant="30" id="gcR-K2-66I"/>
@@ -203,48 +321,74 @@ W X Y Z</string>
                                     <constraint firstItem="6rC-P0-FxI" firstAttribute="leading" secondItem="IHP-1Z-4b6" secondAttribute="leading" constant="30" id="qpn-p8-rw5"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="tdB-UP-8T6">
-                                <rect key="frame" x="24" y="68" width="366" height="160"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="번호" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJl-hl-gCh">
-                                        <rect key="frame" x="0.0" y="0.0" width="366" height="76.666666666666671"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="번호 추가" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMG-Md-L4y">
-                                        <rect key="frame" x="0.0" y="83.666666666666657" width="366" height="76.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="eQj-Me-vqk"/>
-                                </constraints>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="IHP-1Z-4b6" firstAttribute="top" secondItem="tdB-UP-8T6" secondAttribute="bottom" constant="24" id="6rg-Wf-DP3"/>
-                            <constraint firstItem="tdB-UP-8T6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="KyN-dt-1Mi"/>
-                            <constraint firstItem="IHP-1Z-4b6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Sax-JC-UJZ"/>
-                            <constraint firstItem="tdB-UP-8T6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="eEy-YC-wc6"/>
+                            <constraint firstItem="VCl-F0-kAA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="491-zu-Tex"/>
+                            <constraint firstItem="VCl-F0-kAA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="4G2-ME-WI6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VCl-F0-kAA" secondAttribute="trailing" constant="30" id="BQK-Gr-IAO"/>
+                            <constraint firstItem="IHP-1Z-4b6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="iDY-da-OwZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IHP-1Z-4b6" secondAttribute="trailing" constant="30" id="nXp-bt-Uy7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tdB-UP-8T6" secondAttribute="trailing" constant="24" id="uur-ZW-bFW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IHP-1Z-4b6" secondAttribute="bottom" constant="24" id="vXo-m1-nSG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="callButton" destination="pBz-KZ-qL8" id="rfF-31-Hrt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="44.927536231884062" y="69.642857142857139"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="05k-Ge-8Ed">
+            <size key="intrinsicContentSize" width="41" height="49"/>
+        </designable>
+        <designable name="4bd-9X-QWg">
+            <size key="intrinsicContentSize" width="70" height="64.333333333333329"/>
+        </designable>
+        <designable name="Ckz-KY-f50">
+            <size key="intrinsicContentSize" width="59.666666666666664" height="64.333333333333329"/>
+        </designable>
+        <designable name="WoE-x3-RW0">
+            <size key="intrinsicContentSize" width="66.666666666666671" height="64.333333333333329"/>
+        </designable>
+        <designable name="bT5-NA-XKL">
+            <size key="intrinsicContentSize" width="52" height="64.333333333333329"/>
+        </designable>
+        <designable name="etn-3w-02x">
+            <size key="intrinsicContentSize" width="55" height="64"/>
+        </designable>
+        <designable name="jRF-hf-y4L">
+            <size key="intrinsicContentSize" width="52" height="64.333333333333329"/>
+        </designable>
+        <designable name="mpz-v9-SnI">
+            <size key="intrinsicContentSize" width="54.666666666666664" height="64"/>
+        </designable>
+        <designable name="obe-xA-v2X">
+            <size key="intrinsicContentSize" width="44.666666666666664" height="30.666666666666668"/>
+        </designable>
+        <designable name="pBz-KZ-qL8">
+            <size key="intrinsicContentSize" width="40.666666666666664" height="30.666666666666668"/>
+        </designable>
+        <designable name="sfY-fV-YEg">
+            <size key="intrinsicContentSize" width="41" height="64"/>
+        </designable>
+        <designable name="uz5-Ic-id2">
+            <size key="intrinsicContentSize" width="41" height="64.333333333333329"/>
+        </designable>
+        <designable name="vVH-Ot-fYx">
+            <size key="intrinsicContentSize" width="53.666666666666664" height="64.333333333333329"/>
+        </designable>
+    </designables>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="asterisk" catalog="system" width="124" height="128"/>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
+        <image name="phone.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
