@@ -397,6 +397,47 @@
             <point key="canvasLocation" x="44.927536231884062" y="69.642857142857139"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="05k-Ge-8Ed">
+            <size key="intrinsicContentSize" width="41" height="49"/>
+        </designable>
+        <designable name="4bd-9X-QWg">
+            <size key="intrinsicContentSize" width="70" height="64.333333333333329"/>
+        </designable>
+        <designable name="Ckz-KY-f50">
+            <size key="intrinsicContentSize" width="59.666666666666664" height="64.333333333333329"/>
+        </designable>
+        <designable name="WoE-x3-RW0">
+            <size key="intrinsicContentSize" width="66.666666666666671" height="64.333333333333329"/>
+        </designable>
+        <designable name="bT5-NA-XKL">
+            <size key="intrinsicContentSize" width="52" height="64.333333333333329"/>
+        </designable>
+        <designable name="etn-3w-02x">
+            <size key="intrinsicContentSize" width="55" height="64"/>
+        </designable>
+        <designable name="jRF-hf-y4L">
+            <size key="intrinsicContentSize" width="52" height="64.333333333333329"/>
+        </designable>
+        <designable name="mpz-v9-SnI">
+            <size key="intrinsicContentSize" width="54.666666666666664" height="64"/>
+        </designable>
+        <designable name="obe-xA-v2X">
+            <size key="intrinsicContentSize" width="44.666666666666664" height="30.666666666666668"/>
+        </designable>
+        <designable name="pBz-KZ-qL8">
+            <size key="intrinsicContentSize" width="24" height="14"/>
+        </designable>
+        <designable name="sfY-fV-YEg">
+            <size key="intrinsicContentSize" width="41" height="64"/>
+        </designable>
+        <designable name="uz5-Ic-id2">
+            <size key="intrinsicContentSize" width="41" height="64.333333333333329"/>
+        </designable>
+        <designable name="vVH-Ot-fYx">
+            <size key="intrinsicContentSize" width="53.666666666666664" height="64.333333333333329"/>
+        </designable>
+    </designables>
     <resources>
         <image name="asterisk" catalog="system" width="124" height="128"/>
         <image name="delete.left.fill" catalog="system" width="128" height="104"/>

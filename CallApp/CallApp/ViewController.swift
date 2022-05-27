@@ -32,12 +32,34 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    func pressNumber(number: UIButton) {
+    // 버튼의 번호를 phoneNumber 배열에 저장하는 메소드
+    func addNumber(number: UIButton) {
         if let num = number.titleLabel?.text {
-            phoneNumberLabel.text? += num
+            phoneNumber.append(num)
         } else {
-            phoneNumberLabel.text? += "*"
+            phoneNumber.append("*")
         }
+    }
+
+    // 전화번호의 길이에 맞게 하이픈을 추가하는 메소드
+    func addHyphen() {
+        if phoneNumber.count == 3 {
+            phoneNumber.append("-")
+        } else if phoneNumber.count == 7 {
+            phoneNumber.append("-")
+        } else if phoneNumber.count == 12 {
+            guard let lastHyphenIndex = phoneNumber.lastIndex(of: "-") else { return }
+            phoneNumber.remove(at: lastHyphenIndex)
+            phoneNumber.insert("-", at: 8)
+        }
+    }
+    
+    // 전화번호의 길이에 맞게 하이픈을 제거하는 메소드
+    func delHyphen() {
+        let lastIndex = phoneNumber.count - 1
+        if phoneNumber[lastIndex] == "-" {
+            phoneNumber.remove(at: lastIndex)
+        } else { return }
     }
     
     @IBAction func tapNumberButton(_ sender: UIButton) {
@@ -45,10 +67,21 @@ class ViewController: UIViewController {
             phoneNumberLabel.isHidden = false
             addPhoneNumber.isHidden = false
         }
-        pressNumber(number: sender)
+        addHyphen()
+        addNumber(number: sender)
+        phoneNumberLabel.text = phoneNumber.joined(separator: "")
     }
     
     @IBAction func tapDelNumberButton(_ sender: UIButton) {
+        if phoneNumber.isEmpty == false {
+            phoneNumber.remove(at: phoneNumber.endIndex - 1)
+            delHyphen()
+            phoneNumberLabel.text = phoneNumber.joined(separator: "")
+        }
+        if phoneNumber.isEmpty {
+            phoneNumberLabel.isHidden = true
+            addPhoneNumber.isHidden = true
+        }
     }
     
 }
