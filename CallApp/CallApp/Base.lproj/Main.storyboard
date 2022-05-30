@@ -34,16 +34,16 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="IHP-1Z-4b6">
-                                <rect key="frame" x="30" y="264.66666666666669" width="330" height="521.33333333333326"/>
+                                <rect key="frame" x="30" y="348" width="330" height="438"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="6rC-P0-FxI">
-                                        <rect key="frame" x="30" y="29.999999999999972" width="270" height="461.33333333333326"/>
+                                        <rect key="frame" x="30" y="30" width="270" height="378"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KRg-0I-6DO">
-                                                <rect key="frame" x="0.0" y="0.0" width="270" height="86.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="70"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uz5-Ic-id2" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="86.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="uz5-Ic-id2" secondAttribute="height" id="G7X-gV-jgj"/>
@@ -61,7 +61,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etn-3w-02x" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
-                                                        <rect key="frame" x="91.666666666666657" y="0.0" width="86.666666666666657" height="86.666666666666671"/>
+                                                        <rect key="frame" x="100" y="0.0" width="70" height="70"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="etn-3w-02x" secondAttribute="height" id="pdr-Qk-18i"/>
@@ -87,7 +87,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVH-Ot-fYx" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
-                                                        <rect key="frame" x="183.33333333333334" y="0.0" width="86.666666666666657" height="86.666666666666671"/>
+                                                        <rect key="frame" x="200" y="0.0" width="70" height="70"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="vVH-Ot-fYx" secondAttribute="height" id="oEo-0t-Fj6"/>
@@ -110,10 +110,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ccr-CF-tDY">
-                                                <rect key="frame" x="0.0" y="93.666666666666629" width="270" height="86.666666666666686"/>
+                                                <rect key="frame" x="0.0" y="77" width="270" height="70"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRF-hf-y4L" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="86.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="jRF-hf-y4L" secondAttribute="height" id="By9-12-bSK"/>
@@ -131,7 +131,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT5-NA-XKL" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
-                                                        <rect key="frame" x="91.666666666666657" y="0.0" width="86.666666666666657" height="86.666666666666671"/>
+                                                        <rect key="frame" x="100" y="0.0" width="70" height="70"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="bT5-NA-XKL" secondAttribute="height" id="tqZ-w4-F8c"/>
@@ -149,7 +149,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckz-KY-f50" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
-                                                        <rect key="frame" x="183.33333333333334" y="0.0" width="86.666666666666657" height="86.666666666666671"/>
+                                                        <rect key="frame" x="200" y="0.0" width="70" height="70"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Ckz-KY-f50" secondAttribute="height" id="aof-33-eAe"/>
@@ -169,10 +169,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ghw-23-7AX">
-                                                <rect key="frame" x="0.0" y="187.33333333333331" width="270" height="86.666666666666686"/>
+                                                <rect key="frame" x="0.0" y="154" width="270" height="70"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoE-x3-RW0" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="86.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="WoE-x3-RW0" secondAttribute="height" id="kUU-2a-hcY"/>
@@ -190,7 +190,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpz-v9-SnI" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
-                                                        <rect key="frame" x="91.666666666666657" y="0.0" width="86.666666666666657" height="86.666666666666671"/>
+                                                        <rect key="frame" x="100" y="0.0" width="70" height="70"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="mpz-v9-SnI" secondAttribute="height" id="fQ9-M0-pZd"/>
@@ -216,7 +216,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bd-9X-QWg" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
-                                                        <rect key="frame" x="183.33333333333334" y="0.0" width="86.666666666666657" height="86.666666666666671"/>
+                                                        <rect key="frame" x="200" y="0.0" width="70" height="70"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="4bd-9X-QWg" secondAttribute="height" id="4sU-mV-Wln"/>
@@ -236,10 +236,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="s0Y-7Z-QDe">
-                                                <rect key="frame" x="0.0" y="280.99999999999994" width="270" height="86.666666666666686"/>
+                                                <rect key="frame" x="0.0" y="231" width="270" height="70"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obe-xA-v2X" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="86.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="obe-xA-v2X" secondAttribute="height" id="zGb-k6-WtT"/>
@@ -256,7 +256,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfY-fV-YEg" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
-                                                        <rect key="frame" x="91.666666666666657" y="0.0" width="86.666666666666657" height="86.666666666666671"/>
+                                                        <rect key="frame" x="100" y="0.0" width="70" height="70"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="sfY-fV-YEg" secondAttribute="height" id="pYp-UB-9bx"/>
@@ -282,7 +282,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05k-Ge-8Ed" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
-                                                        <rect key="frame" x="183.33333333333334" y="0.0" width="86.666666666666657" height="86.666666666666671"/>
+                                                        <rect key="frame" x="200" y="0.0" width="70" height="70"/>
                                                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="05k-Ge-8Ed" secondAttribute="height" id="XSn-Zb-Ors"/>
@@ -302,10 +302,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kA3-5D-8qD">
-                                                <rect key="frame" x="91.666666666666643" y="374.66666666666669" width="178.33333333333337" height="86.666666666666686"/>
+                                                <rect key="frame" x="100" y="308" width="170" height="70"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBz-KZ-qL8" customClass="RoundButton" customModule="CallApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="86.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="pBz-KZ-qL8" secondAttribute="height" id="U2J-b0-qB7"/>
                                                         </constraints>
@@ -317,9 +317,12 @@
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="qbZ-uM-wKO" kind="show" id="JRq-D3-D1a"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfy-1n-eau">
-                                                        <rect key="frame" x="91.666666666666686" y="0.0" width="86.666666666666686" height="86.666666666666671"/>
+                                                        <rect key="frame" x="100" y="0.0" width="70" height="70"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Lfy-1n-eau" secondAttribute="height" id="yiH-AX-4XJ"/>
                                                         </constraints>
@@ -396,6 +399,54 @@
             </objects>
             <point key="canvasLocation" x="44.927536231884062" y="69.642857142857139"/>
         </scene>
+        <!--Called View Controller-->
+        <scene sceneID="Qak-Nz-CQN">
+            <objects>
+                <viewController storyboardIdentifier="CalledViewController" id="qbZ-uM-wKO" customClass="CalledViewController" customModule="CallApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wqe-Al-ZcX">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="통화 연결 중..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riR-HX-tE4">
+                                <rect key="frame" x="121.33333333333333" y="184" width="147.33333333333337" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAP-8G-oeT">
+                                <rect key="frame" x="155" y="510" width="80" height="80"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="44a-fc-b70"/>
+                                    <constraint firstAttribute="height" constant="80" id="A3e-ns-HsA"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="phone.down.circle.fill" catalog="system">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="hangUpButton:" destination="qbZ-uM-wKO" eventType="touchUpInside" id="sjl-kC-u47"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xgP-dH-nUf"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="riR-HX-tE4" firstAttribute="top" secondItem="xgP-dH-nUf" secondAttribute="top" constant="140" id="2FW-6K-gwy"/>
+                            <constraint firstItem="riR-HX-tE4" firstAttribute="centerX" secondItem="Wqe-Al-ZcX" secondAttribute="centerX" id="GhY-Qa-Cf5"/>
+                            <constraint firstItem="xgP-dH-nUf" firstAttribute="bottom" secondItem="uAP-8G-oeT" secondAttribute="bottom" constant="200" id="hKH-op-YR2"/>
+                            <constraint firstItem="uAP-8G-oeT" firstAttribute="centerX" secondItem="riR-HX-tE4" secondAttribute="centerX" id="j74-jF-qxj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eZO-Ex-1aJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2xr-2z-NI1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910.76923076923072" y="68.957345971563981"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="05k-Ge-8Ed">
@@ -442,8 +493,15 @@
         <image name="asterisk" catalog="system" width="124" height="128"/>
         <image name="delete.left.fill" catalog="system" width="128" height="104"/>
         <image name="phone.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="phone.down.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
