@@ -69,7 +69,8 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="search" id="XZW-yo-ee1"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Yf-pD-EFf">
                             <connections>
-                                <segue destination="Y0r-2C-2RS" kind="show" id="7Am-tf-L0e"/>
+                                <action selector="tapAddPerson:" destination="BYZ-38-t0r" id="pL8-kE-X9U"/>
+                                <segue destination="gUz-Qu-Xld" kind="show" id="1mb-dV-Yaw"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -118,16 +119,16 @@
             </objects>
             <point key="canvasLocation" x="871" y="822"/>
         </scene>
-        <!--Edit View Controller-->
+        <!--연락처 수정-->
         <scene sceneID="KaN-lM-ctG">
             <objects>
-                <viewController id="gUz-Qu-Xld" customClass="EditViewController" customModule="PhoneBook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditViewController" id="gUz-Qu-Xld" customClass="EditViewController" customModule="PhoneBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="83m-TA-kkv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KGc-TK-qCq">
-                                <rect key="frame" x="0.0" y="174" width="414" height="68"/>
+                                <rect key="frame" x="0.0" y="218" width="414" height="68"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qvu-jM-XaD">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
@@ -150,6 +151,17 @@
                             <constraint firstItem="KGc-TK-qCq" firstAttribute="leading" secondItem="Odp-1E-j4n" secondAttribute="leading" id="akQ-LW-hdc"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="연락처 수정" id="gEw-YT-bKf">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Nhg-S7-UjZ">
+                            <connections>
+                                <action selector="doneButton:" destination="gUz-Qu-Xld" id="XDA-FF-j3Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameLabel" destination="qvu-jM-XaD" id="eiL-xs-uy1"/>
+                        <outlet property="phoneNumberLabel" destination="FSa-Ct-MSJ" id="Dqh-OU-atH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pg1-7Q-Jb0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,13 +170,13 @@
         <!--연락처 추가-->
         <scene sceneID="gtb-68-zt9">
             <objects>
-                <viewController id="Y0r-2C-2RS" customClass="AddViewController" customModule="PhoneBook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddViewController" id="Y0r-2C-2RS" customClass="AddViewController" customModule="PhoneBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Xb-Pi-0jE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vIL-yU-pre">
-                                <rect key="frame" x="0.0" y="218" width="414" height="68"/>
+                                <rect key="frame" x="0.0" y="174" width="414" height="68"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="STf-I8-XHq">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
@@ -195,8 +207,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="person_Name" destination="STf-I8-XHq" id="Aj5-ft-IzY"/>
-                        <outlet property="person_PhoneNumber" destination="zUR-3K-EKY" id="sNr-xo-vk8"/>
+                        <outlet property="nameLabel" destination="STf-I8-XHq" id="MHy-tO-HUU"/>
+                        <outlet property="phoneNumberLabel" destination="zUR-3K-EKY" id="jqX-Pu-PQj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="stF-mF-fsy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
