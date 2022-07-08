@@ -8,24 +8,49 @@
 import UIKit
 
 class ViewController: UIViewController, AddViewDelegate, EditViewDelegate {
+
+    
     @IBOutlet weak var phoneTableView: UITableView!
     var persons = [Person]() {
         didSet {
             self.saveData()
         }
     }
+    var filteredPersons = [Person]()
+    
+    // SearchController의 사용 여부에 따라 filtering의 유무를 결정하는 프로퍼티
+    var isFiltering: Bool {
+        let searchController = self.navigationItem.searchController
+        let isActive = searchController?.isActive ?? false
+        let isSearchBarHasText = searchController?.searchBar.text?.isEmpty == false
+        return isActive && isSearchBarHasText
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadData()
-        self.phoneTableView.dataSource = self
-        self.phoneTableView.delegate = self
+        self.setupSearchController()
+        self.setupPhoneTableView()
     }
 
     @IBAction func tapAddPerson(_ sender: Any) {
         guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "AddViewController") as? AddViewController else { return }
         viewController.delegate = self
         self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func setupSearchController() {
+        let searchController = UISearchController(searchResultsController: nil)
+        self.navigationItem.searchController = searchController
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+        
+        // text의 변화에 따른 search 값 업데이트 delegate
+        searchController.searchResultsUpdater = self
+    }
+    
+    func setupPhoneTableView() {
+        self.phoneTableView.dataSource = self
+        self.phoneTableView.delegate = self
     }
     
     // addViewController에서 추가된 새로운 Person 인스턴스를 persons 객체에 추가
@@ -68,13 +93,16 @@ class ViewController: UIViewController, AddViewDelegate, EditViewDelegate {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.persons.count
+        return self.isFiltering ? self.filteredPersons.count : self.persons.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let person = self.persons[indexPath.row]
-        cell.textLabel?.text = person.name
+        if self.isFiltering {
+            cell.textLabel?.text = self.filteredPersons[indexPath.row].name
+        } else {
+            cell.textLabel?.text = self.persons[indexPath.row].name
+        }
         return cell
     }
 }
@@ -88,5 +116,17 @@ extension ViewController: UITableViewDelegate {
         viewController.indexPath = indexPath.row
         viewController.delegate = self
         self.navigationController?.pushViewController(viewController, animated: true)
+    }
+}
+
+// searchResult Delegate
+extension ViewController: UISearchResultsUpdating {
+    // text가 변화할 때 마다 검색의 결과 값이 변하는 로직 구현
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text?.lowercased() else { return }
+        self.filteredPersons = self.persons.filter {
+            $0.name.lowercased().contains(text)
+        }
+        self.phoneTableView.reloadData()
     }
 }
