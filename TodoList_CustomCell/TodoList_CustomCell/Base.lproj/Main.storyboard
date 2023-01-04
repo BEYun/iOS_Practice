@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dt9-OD-dfl">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ToDoList-->
+        <scene sceneID="B0l-of-PUd">
+            <objects>
+                <viewController id="W0C-aG-B3z" customClass="ViewController" customModule="TodoList_CustomCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MhT-yB-Oky">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="6pP-h7-QLy">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TodoListCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodoListCell" id="jdF-wC-XT0" customClass="TodoListTableViewCell" customModule="TodoList_CustomCell" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="39.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jdF-wC-XT0" id="JuW-w8-Mbf">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="39.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j9-q2-Z1N">
+                                                    <rect key="frame" x="9.9999999999999964" y="2" width="49.666666666666657" height="35.666666666666664"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="checkmark.circle" catalog="system">
+                                                        <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </buttonConfiguration>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvT-cr-hKl">
+                                                    <rect key="frame" x="69.666666666666671" y="9.0000000000000018" width="243.66666666666663" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBc-ps-1nA">
+                                                    <rect key="frame" x="333.33333333333331" y="2" width="49.666666666666686" height="35.666666666666664"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="arrow.right.to.line.circle" catalog="system"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="hvT-cr-hKl" secondAttribute="bottom" constant="9" id="3zg-90-68c"/>
+                                                <constraint firstItem="hvT-cr-hKl" firstAttribute="leading" secondItem="3j9-q2-Z1N" secondAttribute="trailing" constant="10" id="4tW-mb-dtq"/>
+                                                <constraint firstAttribute="bottom" secondItem="3j9-q2-Z1N" secondAttribute="bottom" constant="2" id="706-Zr-jBc"/>
+                                                <constraint firstAttribute="trailing" secondItem="tBc-ps-1nA" secondAttribute="trailing" constant="10" id="GHf-Ta-0kd"/>
+                                                <constraint firstItem="hvT-cr-hKl" firstAttribute="top" secondItem="JuW-w8-Mbf" secondAttribute="top" constant="9" id="Qtf-07-EWs"/>
+                                                <constraint firstItem="tBc-ps-1nA" firstAttribute="leading" secondItem="hvT-cr-hKl" secondAttribute="trailing" constant="20" id="Ug3-YN-22k"/>
+                                                <constraint firstAttribute="bottom" secondItem="tBc-ps-1nA" secondAttribute="bottom" constant="2" id="Wet-07-tx4"/>
+                                                <constraint firstItem="3j9-q2-Z1N" firstAttribute="top" secondItem="JuW-w8-Mbf" secondAttribute="top" constant="2" id="keL-o4-Zpg"/>
+                                                <constraint firstItem="tBc-ps-1nA" firstAttribute="top" secondItem="JuW-w8-Mbf" secondAttribute="top" constant="2" id="rM4-YK-HtT"/>
+                                                <constraint firstItem="3j9-q2-Z1N" firstAttribute="leading" secondItem="JuW-w8-Mbf" secondAttribute="leading" constant="10" id="scg-jT-Dtc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="chkButton" destination="3j9-q2-Z1N" id="aR0-aD-U7q"/>
+                                            <outlet property="infoButton" destination="tBc-ps-1nA" id="x40-0I-TXm"/>
+                                            <outlet property="titleLabel" destination="hvT-cr-hKl" id="yBh-hi-yay"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EZy-vt-K1h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ToDoList" id="zkl-CW-KCL"/>
+                    <connections>
+                        <outlet property="tableView" destination="6pP-h7-QLy" id="HV9-EM-a5H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i92-dh-gy5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="710.68702290076328" y="26.760563380281692"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="scm-DA-R42">
+            <objects>
+                <navigationController id="Dt9-OD-dfl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3lq-rF-cGV">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="W0C-aG-B3z" kind="relationship" relationship="rootViewController" id="JMW-Fr-M6R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSy-2m-6su" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-195" y="27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.right.to.line.circle" catalog="system" width="128" height="123"/>
+        <image name="checkmark.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
